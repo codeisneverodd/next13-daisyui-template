@@ -5,13 +5,13 @@ export default function Home() {
         <span className="loading loading-spinner"></span>
         loading
       </button>
-      <div className="dropdown dropdown-end">
+      <div className="dropdown-end dropdown">
         <label tabIndex={0} className="btn m-1">
           Click
         </label>
         <ul
           tabIndex={0}
-          className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          className="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
         >
           <li>
             <a>Item 1</a>
