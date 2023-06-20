@@ -29,7 +29,20 @@
     "daisyui": "^3.1.1",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-tailwindcss": "^3.12.1",
-    "prettier": "^2.8.8",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": "bash -c tsc",
+    "*.@(js|ts|tsx)": [
+      "eslint --fix",
+      "prettier --config ./.prettierrc --write -u"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

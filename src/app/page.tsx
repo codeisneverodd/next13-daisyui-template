@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main>
       <button className="btn">
-        <span className="loading loading-spinner"></span>
+        <span className=" loading loading-spinner"></span>
         loading
       </button>
       <div className="dropdown-end dropdown">
