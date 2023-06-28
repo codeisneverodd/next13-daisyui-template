@@ -1,6 +1,5 @@
 import "./globals.css";
 import localFont from "next/font/local";
-import Providers from "./providers";
 
 const pretendard = localFont({
   src: "../fonts/PretendardVariable.woff2",
@@ -24,7 +23,7 @@ export default function RootLayout({
         suppressHydrationWarning={true}
         className={`${pretendard.variable}`}
       >
-        <Providers>{children}</Providers>
+        {children}
       </body>
     </html>
   );
